@@ -19,4 +19,5 @@ File directions:
 * Login page: login.html
 * Home page: index.html
 * Profile page: profile.html
-[Mannual.pdf](https://github.com/Pradnya-27/SKORE-E-Learning-Website-/files/11384034/Mannual.pdf)
+
+*[Mannual.pdf](https://github.com/Pradnya-27/SKORE-E-Learning-Website-/files/11384034/Mannual.pdf)*
