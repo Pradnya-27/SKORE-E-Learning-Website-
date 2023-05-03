@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>skore.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="skore-sidebar skore-bar-block skore-collapse skore-card skore-animate-left" style="width:200px; background-color: black;"  id="mySidebar">
+  <button class="skore-bar-item skore-button skore-large skore-hide-large" onclick="skore_close()">Close &times;</button>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Basics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+      <a href="jpl.html" class="skore-bar-item skore-button">Java Programming Language</a>
+      <a href="index.html" class="skore-bar-item skore-button">Introduction to Java</a>
+      <a href="settingup.html" class="skore-bar-item skore-button">Setting up the environment in Java</a>
+      <a href="syntax.html" class="skore-bar-item skore-button">Java Basic Syntax</a>
+      <a href="prog.html" class="skore-bar-item skore-button">Java Hello World Program</a>
+      <a href="diff.html" class="skore-bar-item skore-button">Differences between JDK, JRE and JVM</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Variables & Data Tpe</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="variables.html">Variable In Java</a>
+    <a href="#">Scopes of Variables in Java</a>
+    <a href="#">Data types in Java</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Flow Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="comingsoon.html">Decision Making in Java (if, if-else, switch, break, continue, jump)</a>
+    <a href="comingsoon.html">Loops in Java</a>
+    <a href="comingsoon.html">Java For loop with Examples</a>
+    <a href="comingsoon.html">For-each loop in Java</a>
+    <a href="comingsoon.html">Java while loop with Examples</a>
+    <a href="comingsoon.html">Switch Statement in Java</a>
+    <a href="comingsoon.html">Continue Statement in Java</a>
+    <a href="comingsoon.html">Break statement in Java</a>
+
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Videos For Reference</button>
+    <div class="dropdown-content" style="left:0;">
+      <iframe width="100%" padding="100px" left="50%"right="50%" position="absolute" transform="translate(-50%,-50%)" src="https://www.youtube.com/embed/ntLJmHOJ0ME" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <iframe width="100%" padding="100px" left="50%" right="50%" position="absolute" transform="translate(-50%,-50%) "src="https://www.youtube.com/embed/zIdg7hkqNE0" title="YouTube video player"
+          frameborder="50"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="skore-main" style="margin-left: 200px; background-color: black;">
+<div class="skore-teal">
+  <button class="skore-button skore-teal skore-xlarge skore-hide-large" onclick="skore_open()">&#9776;</button>
+  <div class="skore-container">
+    <h1>SKORE</h1>
+  </div>
+</div>
+
+
+<div id="Setting" class="intoduction-java">
+    <h2><b>Setting up the environment in Java</b></h2><br>
+    <div class="content">
+    <p>
+        Java is a universally useful PC programming language that is simultaneous, class-based, object-situated, and so forth. Java applications are commonly aggregated to bytecode that can run on any Java virtual machine (JVM) paying little heed to PC engineering. The most recent adaptation is Java 18. The following are the climate settings for both Linux and Windows. JVM, JRE, and JDK three are all stage subordinate on the grounds that the design of each Working Framework is unique. Be that as it may, Java is stage autonomous. Barely any things should be clear prior to setting up the climate which can all the more likely be seen from the underneath picture gave as follows: <br><br><br>
+        <img src="images/jvm.png" alt="" height="45%" width="90%">
+    </p>
+    <br><br>
+    <p>
+        &#9830;<b>JDK(Java Development Kit): </b>JDK is intended for software developers and includes development tools such as the Java compiler, Javadoc, Jar, and a debugger. <br>
+        &#9830;<b>JRE(Java Runtime Environment):</b> JRE contains the parts of the Java libraries required to run Java programs and is intended for end-users. JRE can be viewed as a subset of JDK. <br>
+        &#9830;<b>JVM:</b> JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides a runtime environment in which java bytecode can be executed. JVMs are available for many hardware and software platforms. <br><br><br>
+        Now let us discuss the steps for setting up a Java environment with visual aids. Let’s use the Windows operating system to illustrate visual aids. <br><br>
+        <b>Steps:</b> Here we will be proposing steps for three different operating systems as listed: <br>
+        &#8594;Windows operating system <br>
+        &#8594;Linux operating systembr <br>
+        &#8594;macOS operating system <br>
+    </p>
+
+    <H3><b>A. Windows operating systems</b></H3>
+    <p>
+        Steps for setting the environment in Windows operating system are as follows: <br><br>
+
+        <b>Step 1:</B> Java8 JDK is available at Download Java 8. Click the second last link for Windows(32 bit) and the last link for Windows(64 bit) as highlighted below. <br><br>
+            <img src="images/window.png" alt="Skore">
+    </p> <br><br>
+    <p>
+        <b>Step 2:</b> After download, run the .exe file and follow the instructions to install Java on your machine. Once you install Java on your machine, you have to set up the environment variable
+    </p><br><br>
+    <p>
+        <b>Step 3:</b> Go to <b> Panel -> System and Security -> System.</b> Under the Advanced System Setting option click on Environment Variables as highlighted below. <br>
+        <img src="images/run.png" alt="">
+    </p><br><br>
+    <p>
+        <b>Step 5:</b> You will see a list of different paths, click on the New button, and then add the path where java is installed. By default, java is installed in “C:\Program Files\Java\jdk\bin” folder OR “C:\Program Files(x86)\Java\jdk\bin”. In case, you have installed java at any other location, then add that path. <br><br>
+        <img src="images/windows1.png" alt="">
+    </p><br>
+    <p>
+        <b>Step 6:</b> Click on OK, Save the settings, and you are done !! Now to check whether the installation is done correctly, open the command prompt and type javac -version. You will see that java is running on your machine.
+    </p>
+    <p class="note">
+        <b>Note:</b> To make sure whether the compiler is set up, type javac in the command prompt. You will see a list related to javac.
+    </p>
+
+
+
+    
+      <button class="button button1"><a href="syntax.html">Next</a></button>
+</div>
+
+</div>
+
+<script>
+function skore_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function skore_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="index.js"></script>
+</body>
+</html>

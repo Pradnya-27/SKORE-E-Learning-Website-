@@ -1,0 +1,1432 @@
+/* skore.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.skore-serif {
+    font-family: serif
+}
+
+.skore-sans-serif {
+    font-family: sans-serif
+}
+
+.skore-cursive {
+    font-family: cursive
+}
+
+.skore-monospace {
+    font-family: monospace
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.skore-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.skore-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.skore-table,
+.skore-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.skore-table-all {
+    border: 1px solid #ccc
+}
+
+.skore-bordered tr,
+.skore-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.skore-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.skore-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.skore-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.skore-hoverable tbody tr:hover,
+.skore-ul.skore-hoverable li:hover {
+    background-color: rgb(222, 7, 7)
+}
+
+.skore-centered tr th,
+.skore-centered tr td {
+    text-align: center
+}
+
+.skore-table td,
+.skore-table th,
+.skore-table-all td,
+.skore-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top
+}
+
+.skore-table th:first-child,
+.skore-table td:first-child,
+.skore-table-all th:first-child,
+.skore-table-all td:first-child {
+    padding-left: 16px
+}
+
+.skore-btn,
+.skore-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.skore-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(158, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19)
+}
+
+.skore-btn,
+.skore-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.skore-disabled,
+.skore-btn:disabled,
+.skore-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.skore-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.skore-btn.skore-disabled:hover,
+.skore-btn:disabled:hover {
+    box-shadow: none
+}
+
+.skore-badge,
+.skore-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.skore-badge {
+    border-radius: 50%
+}
+
+.skore-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.skore-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.skore-ul li:last-child {
+    border-bottom: none
+}
+
+.skore-tooltip,
+.skore-display-container {
+    position: relative
+}
+
+.skore-tooltip .skore-text {
+    display: none
+}
+
+.skore-tooltip:hover .skore-text {
+    display: inline-block
+}
+
+.skore-ripple:active {
+    opacity: 0.5
+}
+
+.skore-ripple {
+    transition: opacity 0s
+}
+
+.skore-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.skore-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.skore-dropdown-click,
+.skore-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.skore-dropdown-hover:hover .skore-dropdown-content {
+    display: block
+}
+
+.skore-dropdown-hover:first-child,
+.skore-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.skore-dropdown-hover:hover>.skore-button:first-child,
+.skore-dropdown-click:hover>.skore-button:first-child {
+    background-color: #0066ff;
+    color: #000
+}
+
+.skore-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.skore-check,
+.skore-radio {
+    width: 100%;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.skore-sidebar {
+    height: 100%;
+    width: 500px;
+    ;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.skore-bar-block .skore-dropdown-hover,
+.skore-bar-block .skore-dropdown-click {
+    width: 100%
+}
+
+.skore-bar-block .skore-dropdown-hover .skore-dropdown-content,
+.skore-bar-block .skore-dropdown-click .skore-dropdown-content {
+    min-width: 100%
+}
+
+.skore-bar-block .skore-dropdown-hover .skore-button,
+.skore-bar-block .skore-dropdown-click .skore-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.skore-main,
+#main {
+    transition: margin-left .4s
+}
+
+.skore-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.skore-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.skore-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.skore-center .skore-bar {
+    display: inline-block;
+    width: auto
+}
+
+.skore-bar .skore-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.skore-bar .skore-dropdown-hover,
+.skore-bar .skore-dropdown-click {
+    position: static;
+    float: left
+}
+
+.skore-bar .skore-button {
+    white-space: normal
+}
+
+.skore-bar-block .skore-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.skore-bar-block.skore-center .skore-bar-item {
+    text-align: center
+}
+
+.skore-block {
+    display: block;
+    width: 100%
+}
+
+.skore-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.skore-container:after,
+.skore-container:before,
+.skore-panel:after,
+.skore-panel:before,
+.skore-row:after,
+.skore-row:before,
+.skore-row-padding:after,
+.skore-row-padding:before,
+.skore-cell-row:before,
+.skore-cell-row:after,
+.skore-clear:after,
+.skore-clear:before,
+.skore-bar:before,
+.skore-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.skore-col,
+.skore-half,
+.skore-third,
+.skore-twothird,
+.skore-threequarter,
+.skore-quarter {
+    float: left;
+    width: 100%
+}
+
+.skore-col.s1 {
+    width: 8.33333%
+}
+
+.skore-col.s2 {
+    width: 16.66666%
+}
+
+.skore-col.s3 {
+    width: 24.99999%
+}
+
+.skore-col.s4 {
+    width: 33.33333%
+}
+
+.skore-col.s5 {
+    width: 41.66666%
+}
+
+.skore-col.s6 {
+    width: 49.99999%
+}
+
+.skore-col.s7 {
+    width: 58.33333%
+}
+
+.skore-col.s8 {
+    width: 66.66666%
+}
+
+.skore-col.s9 {
+    width: 74.99999%
+}
+
+.skore-col.s10 {
+    width: 83.33333%
+}
+
+.skore-col.s11 {
+    width: 91.66666%
+}
+
+.skore-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .skore-col.m1 {
+        width: 8.33333%
+    }
+
+    .skore-col.m2 {
+        width: 16.66666%
+    }
+
+    .skore-col.m3,
+    .skore-quarter {
+        width: 24.99999%
+    }
+
+    .skore-col.m4,
+    .skore-third {
+        width: 33.33333%
+    }
+
+    .skore-col.m5 {
+        width: 41.66666%
+    }
+
+    .skore-col.m6,
+    .skore-half {
+        width: 49.99999%
+    }
+
+    .skore-col.m7 {
+        width: 58.33333%
+    }
+
+    .skore-col.m8,
+    .skore-twothird {
+        width: 66.66666%
+    }
+
+    .skore-col.m9,
+    .skore-threequarter {
+        width: 74.99999%
+    }
+
+    .skore-col.m10 {
+        width: 83.33333%
+    }
+
+    .skore-col.m11 {
+        width: 91.66666%
+    }
+
+    .skore-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .skore-col.l1 {
+        width: 8.33333%
+    }
+
+    .skore-col.l2 {
+        width: 16.66666%
+    }
+
+    .skore-col.l3 {
+        width: 24.99999%
+    }
+
+    .skore-col.l4 {
+        width: 33.33333%
+    }
+
+    .skore-col.l5 {
+        width: 41.66666%
+    }
+
+    .skore-col.l6 {
+        width: 49.99999%
+    }
+
+    .skore-col.l7 {
+        width: 58.33333%
+    }
+
+    .skore-col.l8 {
+        width: 66.66666%
+    }
+
+    .skore-col.l9 {
+        width: 74.99999%
+    }
+
+    .skore-col.l10 {
+        width: 83.33333%
+    }
+
+    .skore-col.l11 {
+        width: 91.66666%
+    }
+
+    .skore-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.skore-rest {
+    overflow: hidden
+}
+
+.skore-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.skore-content,
+.skore-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.skore-content {
+    max-width: 980px
+}
+
+.skore-auto {
+    max-width: 1140px
+}
+
+.skore-cell-row {
+    display: table;
+    width: 100%
+}
+
+.skore-cell {
+    display: table-cell
+}
+
+.skore-cell-top {
+    vertical-align: top
+}
+
+.skore-cell-middle {
+    vertical-align: middle
+}
+
+.skore-cell-bottom {
+    vertical-align: bottom
+}
+
+.skore-hide {
+    display: none !important
+}
+
+.skore-show-block,
+.skore-show {
+    display: block !important
+}
+
+.skore-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width:1205px) {
+    .skore-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:600px) {
+    .skore-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .skore-modal {
+        padding-top: 30px
+    }
+
+    .skore-dropdown-hover.skore-mobile .skore-dropdown-content,
+    .skore-dropdown-click.skore-mobile .skore-dropdown-content {
+        position: relative
+    }
+
+    .skore-hide-small {
+        display: none !important
+    }
+
+    .skore-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .skore-bar-item.skore-mobile,
+    .skore-dropdown-hover.skore-mobile,
+    .skore-dropdown-click.skore-mobile {
+        text-align: center
+    }
+
+    .skore-dropdown-hover.skore-mobile,
+    .skore-dropdown-hover.skore-mobile .skore-btn,
+    .skore-dropdown-hover.skore-mobile .skore-button,
+    .skore-dropdown-click.skore-mobile,
+    .skore-dropdown-click.skore-mobile .skore-btn,
+    .skore-dropdown-click.skore-mobile .skore-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .skore-modal-content {
+        width: 500px
+    }
+
+    .skore-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .skore-modal-content {
+        width: 900px
+    }
+
+    .skore-hide-large {
+        display: none !important
+    }
+
+    .skore-sidebar.skore-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .skore-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) {
+    .skore-sidebar.skore-collapse {
+        display: none
+    }
+
+    .skore-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .skore-auto {
+        max-width: 100%
+    }
+}
+
+.skore-top,
+.skore-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.skore-top {
+    top: 0
+}
+
+.skore-bottom {
+    bottom: 0
+}
+
+.skore-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.skore-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.skore-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.skore-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.skore-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.skore-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.skore-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.skore-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.skore-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.skore-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.skore-display-container:hover .skore-display-hover {
+    display: block
+}
+
+.skore-display-container:hover span.skore-display-hover {
+    display: inline-block
+}
+
+.skore-display-hover {
+    display: none
+}
+
+.skore-display-position {
+    position: absolute
+}
+
+.skore-circle {
+    border-radius: 50%
+}
+
+.skore-round-small {
+    border-radius: 2px
+}
+
+.skore-round,
+.skore-round-medium {
+    border-radius: 4px
+}
+
+.skore-round-large {
+    border-radius: 8px
+}
+
+.skore-round-xlarge {
+    border-radius: 16px
+}
+
+.skore-round-xxlarge {
+    border-radius: 32px
+}
+
+.skore-row-padding,
+.skore-row-padding>.skore-half,
+.skore-row-padding>.skore-third,
+.skore-row-padding>.skore-twothird,
+.skore-row-padding>.skore-threequarter,
+.skore-row-padding>.skore-quarter,
+.skore-row-padding>.skore-col {
+    padding: 0 8px
+}
+
+.skore-container,
+.skore-panel {
+    padding: 0.01em 16px
+}
+
+.skore-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.skore-code,
+.skore-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.skore-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.skore-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.skore-card,
+.skore-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.skore-card-4,
+.skore-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.skore-spin {
+    animation: skore-spin 2s infinite linear
+}
+
+@keyframes skore-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.skore-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.skore-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.skore-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.skore-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.skore-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.skore-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.skore-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.skore-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.skore-animate-input:focus {
+    width: 100% !important
+}
+
+.skore-opacity,
+.skore-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.skore-opacity-off,
+.skore-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.skore-opacity-max {
+    opacity: 0.25
+}
+
+.skore-opacity-min {
+    opacity: 0.75
+}
+
+.skore-greyscale-max,
+.skore-grayscale-max,
+.skore-hover-greyscale:hover,
+.skore-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.skore-greyscale,
+.skore-grayscale {
+    filter: grayscale(75%)
+}
+
+.skore-greyscale-min,
+.skore-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.skore-sepia {
+    filter: sepia(75%)
+}
+
+.skore-sepia-max,
+.skore-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.skore-sepia-min {
+    filter: sepia(50%)
+}
+
+.skore-tiny {
+    font-size: 10px !important
+}
+
+.skore-small {
+    font-size: 12px !important
+}
+
+.skore-medium {
+    font-size: 15px !important
+}
+
+.skore-large {
+    font-size: 18px !important
+}
+
+.skore-xlarge {
+    font-size: 24px !important
+}
+
+.skore-xxlarge {
+    font-size: 36px !important
+}
+
+.skore-xxxlarge {
+    font-size: 48px !important
+}
+
+.skore-jumbo {
+    font-size: 64px !important
+}
+
+.skore-left-align {
+    text-align: left !important
+}
+
+.skore-right-align {
+    text-align: right !important
+}
+
+.skore-justify {
+    text-align: justify !important
+}
+
+.skore-center {
+    text-align: center !important
+}
+
+.skore-border-0 {
+    border: 0 !important
+}
+
+.skore-border {
+    border: 1px solid #ccc !important
+}
+
+.skore-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.skore-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+/* Colors */
+
+.skore-red,
+.skore-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.skore-sand,
+.skore-hover-sand:hover {
+    color: #000 !important;
+    background-color: #a07c3a !important
+}
+
+.skore-teal,
+.skore-hover-teal:hover {
+    color: #fff !important;
+    background-color: #3586ff !important
+}
+
+.skore-yellow,
+.skore-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.skore-white,
+.skore-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.skore-black,
+.skore-hover-black:hover {
+    color: #fff !important;
+    background-color: rgb(126, 71, 71) !important
+}
+
+.skore-grey,
+.skore-hover-grey:hover,
+.skore-gray,
+.skore-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}

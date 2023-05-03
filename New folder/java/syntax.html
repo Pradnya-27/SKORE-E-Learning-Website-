@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>skore.CSS</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="skore-sidebar skore-bar-block skore-collapse skore-card skore-animate-left" style="width:200px; background-color: black;"  id="mySidebar">
+  <button class="skore-bar-item skore-button skore-large skore-hide-large" onclick="skore_close()">Close &times;</button>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Basics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+      <a href="jpl.html" class="skore-bar-item skore-button">Java Programming Language</a>
+      <a href="index.html" class="skore-bar-item skore-button">Introduction to Java</a>
+      <a href="settingup.html" class="skore-bar-item skore-button">Setting up the environment in Java</a>
+      <a href="syntax.html" class="skore-bar-item skore-button">Java Basic Syntax</a>
+      <a href="prog.html" class="skore-bar-item skore-button">Java Hello World Program</a>
+      <a href="diff.html" class="skore-bar-item skore-button">Differences between JDK, JRE and JVM</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Variables & Data Tpe</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="variables.html">Variable In Java</a>
+    <a href="#">Scopes of Variables in Java</a>
+    <a href="#">Data types in Java</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Flow Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="comingsoon.html">Decision Making in Java (if, if-else, switch, break, continue, jump)</a>
+    <a href="comingsoon.html">Loops in Java</a>
+    <a href="comingsoon.html">Java For loop with Examples</a>
+    <a href="comingsoon.html">For-each loop in Java</a>
+    <a href="comingsoon.html">Java while loop with Examples</a>
+    <a href="comingsoon.html">Switch Statement in Java</a>
+    <a href="comingsoon.html">Continue Statement in Java</a>
+    <a href="comingsoon.html">Break statement in Java</a>
+
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Videos For Reference</button>
+    <div class="dropdown-content" style="left:0;">
+      <iframe width="100%" padding="100px" left="50%"right="50%" position="absolute" transform="translate(-50%,-50%)" src="https://www.youtube.com/embed/ntLJmHOJ0ME" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <iframe width="100%" padding="100px" left="50%" right="50%" position="absolute" transform="translate(-50%,-50%) "src="https://www.youtube.com/embed/zIdg7hkqNE0" title="YouTube video player"
+          frameborder="50"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="skore-main" style="margin-left: 200px; background-color: black;">
+<div class="skore-teal">
+  <button class="skore-button skore-teal skore-xlarge skore-hide-large" onclick="skore_open()">&#9776;</button>
+  <div class="skore-container">
+    <h1>SKORE</h1>
+  </div>
+</div>
+
+
+<div id="Syntax" class="intoduction-java">
+    <h2><b>Basic terminologies in Java</b></h2><br>
+    <div class="content">
+        <b>1. Class:</b> The class is a blueprint (plan) of the instance of a class (object). It can be defined as a template that describes the data and behavior associated with its instance.
+<br>
+        <b>Example: </b> Blueprint of the house is class. <br>
+        <b>2. Object: </b> The object is an instance of a class. It is an entity that has behavior and state. <br><br>
+        
+        <b>Example: </b> A car is an object whose states are: brand, color, and number plate.
+        <b>Behavior: </b> Running on the road. <br>
+        <b>3. Method: </b> The behavior of an object is the method. <br>
+        
+            <b>Example: </b> The fuel indicator indicates the amount of fuel left in the car. <br>
+            <b>4. Instance variables: </b> Every object has its own unique set of instance variables. The state of an object is generally created by the values that are assigned to these instance variables. <br>
+        
+            <b>Example: </b> Steps to compile and run a java program in a console <br>
+
+        <p>
+
+        </p>
+
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  JAVA
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" style="background-color: rgb(37, 37, 37);">
+                  <code>public class SKORE {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("SKORE");<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }</code>
+                </div>
+              </div>
+            </div>
+        </div>
+<br><br>
+        <b>Output:</b>
+        <P class=note>
+            SKORE
+        </P>
+        
+        <P>
+            <b>Note</b> When the class is public, the name of the file has to be the class name.
+        </P>
+<br><br>
+        <h3><strong>Java Keywords</strong></h3><br>
+        <p><b>Keywords or Reserved words</b>are the words in a language that are used for some internal process or represent some predefined actions. These words are therefore not allowed to use as variable names or objects. </p>
+        <img src="images/keywords.webp" alt="keywors Skore" height="45%" width="95%">
+
+    </div>
+
+
+    
+      <button class="button button1"><a href="prog.html">Next</a></button>
+</div>
+
+</div>
+
+<script>
+function skore_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function skore_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="index.js"></script>
+</body>
+</html>

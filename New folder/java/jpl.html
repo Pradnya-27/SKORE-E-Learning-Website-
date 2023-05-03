@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>SKORE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="skore-sidebar skore-bar-block skore-collapse skore-card skore-animate-left" style="width:230px; background-color: black;"  id="mySidebar">
+  <button class="skore-bar-item skore-button skore-large skore-hide-large" onclick="skore_close()">Close &times;</button>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Basics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+      <a href="jpl.html" class="skore-bar-item skore-button">Java Programming Language</a>
+      <a href="index.html" class="skore-bar-item skore-button">Introduction to Java</a>
+      <a href="settingup.html" class="skore-bar-item skore-button">Setting up the environment in Java</a>
+      <a href="syntax.html" class="skore-bar-item skore-button">Java Basic Syntax</a>
+      <a href="prog.html" class="skore-bar-item skore-button">Java Hello World Program</a>
+      <a href="diff.html" class="skore-bar-item skore-button">Differences between JDK, JRE and JVM</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Variables & Data Type</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="variables.html">Variable In Java</a>
+    <a href="#">Scopes of Variables in Java</a>
+    <a href="#">Data types in Java</a>
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Flow Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="comingsoon.html">Decision Making in Java (if, if-else, switch, break, continue, jump)</a>
+    <a href="comingsoon.html">Loops in Java</a>
+    <a href="comingsoon.html">Java For loop with Examples</a>
+    <a href="comingsoon.html">For-each loop in Java</a>
+    <a href="comingsoon.html">Java while loop with Examples</a>
+    <a href="comingsoon.html">Switch Statement in Java</a>
+    <a href="comingsoon.html">Continue Statement in Java</a>
+    <a href="comingsoon.html">Break statement in Java</a>
+
+    </div>
+  </div>
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Videos For Reference</button>
+    <div class="dropdown-content" style="left:0;">
+      <iframe width="100%"  padding="100px" left="50%"right="50%" position="absolute" transform="translate(-50%,-50%)" src="https://www.youtube.com/embed/ntLJmHOJ0ME" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <iframe width="100%" padding="100px" left="50%" right="50%" position="absolute" transform="translate(-50%,-50%) "src="https://www.youtube.com/embed/zIdg7hkqNE0" title="YouTube video player"
+          frameborder="50"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="skore-main" style="margin-left: 250px; background-color: black;">
+<div class="skore-teal">
+  <button class="skore-button skore-teal skore-xlarge skore-hide-large" onclick="skore_open()">&#9776;</button>
+  <div class="skore-container">
+    <h1>SKORE</h1>
+  </div>
+</div>
+
+
+<div id="JPL" class="intoduction-java">
+    <h2>JAVA Programing Language</h2><br>
+    <div class="content">
+    <P>
+        Java is one of the most popular and widely used programming languages.
+        <br><br>
+        &#9830;	Java has been one of the most popular programming languages for many years.<br>
+
+        &#9830;	Java is Object Oriented. However, it is not considered as pure object-oriented as it provides support for primitive data types (like int, char, etc) <br>
+        &#9830;	The Java codes are first compiled into byte code (machine-independent code). Then the byte code runs on Java Virtual Machine (JVM) regardless of the underlying architecture. <br>
+        &#9830;	Java syntax is similar to C/C++. But Java does not provide low-level programming functionalities like pointers. Also, Java codes are always written in the form of classes and objects. <br>
+        &#9830;	Java is used in all kinds of applications like Mobile Applications (Android is Java-based), desktop applications, web applications, client-server applications, enterprise applications, and many more. <br>
+        &#9830;	When compared with C++, Java codes are generally more maintainable because Java does not allow many things which may lead to bad/inefficient programming if used incorrectly. For example, non-primitives are always references in Java. So we cannot pass large objects (like we can do in C++) to functions, we always pass references in Java. One more example, since there are no pointers, bad memory access is also not possible. <br>
+        &#9830;	When compared with Python, Java kind of fits between C++ and Python. The programs are written in Java typically run faster than corresponding Python programs and slower than C++. Like C++, Java does static type checking, but Python does not. <br>
+    </P>
+    
+      <button class="button button1"><a href="index.html">Next</a></button>
+</div>
+
+</div>
+
+<script>
+function skore_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function skore_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="index.js"></script>
+</body>
+</html>

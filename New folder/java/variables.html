@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>SKORE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="assets/img/favicon.png" rel="icon">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="skore-sidebar skore-bar-block skore-collapse skore-card skore-animate-left"
+    style="width:220px; background-color: black;" id="mySidebar">
+    <button class="skore-bar-item skore-button skore-large skore-hide-large" onclick="skore_close()">Close
+      &times;</button>
+    <div class="dropdown" style="float:left;">
+      <button
+        class="dropbtn">Basics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+      <div class="dropdown-content" style="left:0;">
+        <a href="jpl.html" class="skore-bar-item skore-button">Java Programming Language</a>
+        <a href="index.html" class="skore-bar-item skore-button">Introduction to Java</a>
+        <a href="settingup.html" class="skore-bar-item skore-button">Setting up the environment in Java</a>
+        <a href="syntax.html" class="skore-bar-item skore-button">Java Basic Syntax</a>
+        <a href="prog.html" class="skore-bar-item skore-button">Java Hello World Program</a>
+        <a href="diff.html" class="skore-bar-item skore-button">Differences between JDK, JRE and JVM</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn">Variables & Data Type</button>
+      <div class="dropdown-content" style="left:0;">
+        <a href="variables.html">Variable In Java</a>
+        <a href="#">Scopes of Variables in Java</a>
+        <a href="#">Data types in Java</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn">Flow Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+      <div class="dropdown-content" style="left:0;">
+        <a href="comingsoon.html">Decision Making in Java (if, if-else, switch, break, continue, jump)</a>
+        <a href="comingsoon.html">Loops in Java</a>
+        <a href="comingsoon.html">Java For loop with Examples</a>
+        <a href="comingsoon.html">For-each loop in Java</a>
+        <a href="comingsoon.html">Java while loop with Examples</a>
+        <a href="comingsoon.html">Switch Statement in Java</a>
+        <a href="comingsoon.html">Continue Statement in Java</a>
+        <a href="comingsoon.html">Break statement in Java</a>
+
+
+      </div>
+    </div>
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn">Videos For Reference</button>
+      <div class="dropdown-content" style="left:0;">
+        <iframe width="100%" padding="100px" left="50%" right="20%" position="absolute" transform="translate(-50%,-50%)"
+          src="https://www.youtube.com/embed/ntLJmHOJ0ME" title="YouTube video player" frameborder="30"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe width="100%" padding="100px" left="50%" right="50%" position="absolute" transform="translate(-50%,-50%) "src="https://www.youtube.com/embed/zIdg7hkqNE0" title="YouTube video player"
+          frameborder="50"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skore-main" style="margin-left: 280px; background-color: black;">
+    <div class="skore-teal">
+      <button class="skore-button skore-teal skore-xlarge skore-hide-large" onclick="skore_open()">&#9776;</button>
+      <div class="skore-container">
+        <h1>SKORE</h1>
+      </div>
+    </div>
+
+    <div id="Variable" class="Variables & data types" style="margin-left: 10px;">
+      <h1>Variable in Java</h1>
+      <p>
+        Variables are containers that store information that can be manipulated and referenced later by the programmer
+        within the code. Java variables have a data type associated with them which can tell us about the size and
+        layout of the variable's memory.
+      </p>
+      <ul type="circle">
+        <li>A) Local variable</li>
+        <li>B) Instance variable</li>
+        <li>C) Class/Static variable</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>A. Local Variables:</h3>
+      <p>A variable that is declared inside the body of the method or constructor is called a local variable. It is
+        called so because the extent of a local variable lies only within the method or constructor within which it is
+        created and other methods in the class cannot access it.</p>
+      <p>Inside the method body, local variable is declared using the static keyword.</p>
+      <p>Example:</p>
+      <pre>public class variableType {
+    public void localVariable() {
+        String name = "Ben";
+        int marks = 95;
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+
+    public static void main(String[] args) {
+        variableType vt = new variableType();
+        vt.localVariable();
+    }
+}</pre>
+      <h4>Ouput:</h4>
+      <p>Ben Scored 95%.</p>
+    </div>
+    <div>
+      <h3>B. Instance Variables:</h3>
+      <p>An instance variable is declared inside the class but outside a method or a constructor. It is similar to a
+        static variable except that it is declared without using the keyword static. These variables are accessible by
+        all methods or constructors that are inside the class.</p>
+      <p>Example:</p>
+      <pre style="background-color: black;" width="120%">public class variableType {
+
+  public String name = "Ben";
+  public int marks = 95;
+
+  public void instanceVariable() {
+      System.out.println(name + " Scored " + marks + "%.");
+  }
+
+  public static void main(String[] args) {
+      variableType vt = new variableType();
+      vt.instanceVariable();
+  }
+}</pre>
+      <h4>Output:</h4>
+      <p>Ben Scored 95%.</p>
+    </div>
+    <div>
+      <h3>C. Class/Static Variables:</h3>
+      <p>An static variable is declared inside the class but outside a method or a constructor. It is similar to a
+        instance variable except that it is declared using the keyword static. These variables are accessible by all
+        methods or constructors that are inside the class.</p>
+      <p>Example:</p>
+      <pre>public class variableType {
+
+    public static String name;
+    public static int marks;
+
+    public static void main(String[] args) {
+        name = "Ben";
+        marks = 95;
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+}</pre>
+      <h4>Output:</h4>
+      <p>Ben Scored 95%.</p>
+    </div>
+
+  </div>
+
+  <script>
+    function skore_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function skore_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>

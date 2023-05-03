@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>skore.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="skore-sidebar skore-bar-block skore-collapse skore-card skore-animate-left" style="width:200px; background-color: black;"  id="mySidebar">
+  <button class="skore-bar-item skore-button skore-large skore-hide-large" onclick="skore_close()">Close &times;</button>
+  <div class="skore-dropdown-hover">
+    <button class="skore-button">Basics
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="skore-dropdown-content skore-bar-block">
+      <a href="#jpl" class="skore-bar-item skore-button">Java Programming Language</a>
+      <a href="w3.html" class="skore-bar-item skore-button">Introduction to Java</a>
+      <a href="#intro" class="skore-bar-item skore-button">Setting up the environment in Java</a>
+      <a href="#intro" class="skore-bar-item skore-button">Java Basic Syntax</a>
+      <a href="#intro" class="skore-bar-item skore-button">Java Hello World Program</a>
+      <a href="#intro" class="skore-bar-item skore-button">Differences between JDK, JRE and JVM</a>
+      <a href="#intro" class="skore-bar-item skore-button">Java Identifiers</a>
+    </div>
+  </div> 
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Variables & Data Tpe</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="#">Variable In Java</a>
+    <a href="#">Scopes of Variables in Java</a>
+    <a href="#">Data types in Java</a>
+    </div>
+  </div>
+  
+</div>
+
+<div class="skore-main" style="margin-left: 200px; background-color: black;">
+<div class="skore-teal">
+  <button class="skore-button skore-teal skore-xlarge skore-hide-large" onclick="skore_open()">&#9776;</button>
+  <div class="skore-container">
+    <h1>SKORE</h1>
+  </div>
+</div>
+
+
+<div id="V&DT" class="intoduction-java">
+    <h2>Setting up the environment in Java</h2><br>
+    <div class="content">
+    
+    
+      <button class="button button1"><a href="w3.html">Next</a></button>
+</div>
+
+</div>
+
+<script>
+function skore_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function skore_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="index.js"></script>
+</body>
+</html>
